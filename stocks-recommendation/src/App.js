@@ -11,9 +11,6 @@ var stocksDictionary ={
 
 var categories = Object.keys(stocksDictionary);
 
-
-
-
 export default function App() {
 
   var [stocks, setStocks] = useState("");
@@ -23,7 +20,6 @@ export default function App() {
     console.log(stocks);
     setStocks(stocks);
   }
-
   return (
     <div className="App">
       <h1>Where will you invest after getting job by attending level 1?</h1>
@@ -34,10 +30,6 @@ export default function App() {
           return <button onClick={()=> onClickCategory(category)} style={{margin:"2rem"}}>{category}</button>
         })
       }
-
-
-
-
       <ul>
       {
           stocks.map((stock)=>{
@@ -45,9 +37,6 @@ export default function App() {
           })
         }
       </ul>
-      
-      
-
     </div>
   );
 }
