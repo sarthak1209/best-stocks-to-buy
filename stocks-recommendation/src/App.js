@@ -1,25 +1,58 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
 
-function App() {
+
+var stocksDictionary ={
+  "Blue Chip": ["TCS", "HDFC Bank","Infosys", "ITC", "L&T" ],
+  "Dividend": ["Power Grid","NTPC","Coal India" , "ONGC", "IOCL"],
+  "Growth":["Relience", "Bajaj Finance", "Banaj Finserv", "Naukari"],
+  "My Other recommondations" :["Relaxo", "Bata", "Crompton", "VIP Bags"]
+}
+
+var categories = Object.keys(stocksDictionary);
+
+
+
+
+export default function App() {
+
+  var [stocks, setStocks] = useState("");
+
+  function onClickCategory(category){
+    var stocks = stocksDictionary[category];
+    console.log(stocks);
+    setStocks(stocks);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Where will you invest after getting job by attending level 1?</h1>
+      <h2>Here I present my favourite stocks!!</h2>
+
+      {
+        categories.map(category =>{
+          return <button onClick={()=> onClickCategory(category)} style={{margin:"2rem"}}>{category}</button>
+        })
+      }
+
+{/* 
+      <ul>
+      {
+          stocks.map((stock)=>{
+            return <li> {stock} </li>
+          })
+        }
+      </ul> */}
+      
+      
+
+        {/* {
+          stocks.forEach(element => {
+            return <li>{element}</li>
+          })
+        } */}
     </div>
   );
 }
 
-export default App;
+
