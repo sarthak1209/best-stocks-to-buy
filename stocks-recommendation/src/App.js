@@ -35,22 +35,19 @@ export default function App() {
         })
       }
 
-{/* 
+
+
+
       <ul>
       {
           stocks.map((stock)=>{
             return <li> {stock} </li>
           })
         }
-      </ul> */}
+      </ul>
       
       
 
-        {/* {
-          stocks.forEach(element => {
-            return <li>{element}</li>
-          })
-        } */}
     </div>
   );
 }
