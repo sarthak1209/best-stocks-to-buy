@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./styles.css";
 
 var stocksDictionary = {
   "Blue Chip": ["TCS", "HDFC Bank", "Infosys", "ITC", "L&T"],

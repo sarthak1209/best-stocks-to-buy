@@ -1,0 +1,17 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 1rem;
+
+  padding: 1rem;
+
+  border-radius: 0.4rem;
+  background-color: #d1d5db;
+}
