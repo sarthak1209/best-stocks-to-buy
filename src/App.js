@@ -3,8 +3,8 @@ import "./styles.css";
 
 var stocksDictionary = {
   "Blue Chip": ["TCS", "HDFC Bank", "Infosys", "ITC", "L&T"],
-  Dividend: ["Power Grid", "NTPC", "Coal India", "ONGC", "IOCL"],
-  Growth: ["Relience", "Bajaj Finance", "Banaj Finserv", "Naukari"],
+  "Dividend": ["Power Grid", "NTPC", "Coal India", "ONGC", "IOCL"],
+  "Growth": ["Relience", "Bajaj Finance", "Banaj Finserv", "Naukari"],
   "My Other recommondations": ["Relaxo", "Bata", "Crompton", "VIP Bags"]
 };
 
